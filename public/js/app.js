@@ -1,0 +1,1 @@
+angular.module('quizApp', ['ngRoute', 'appRoutes', 'MainCtrl', 'ListCtrl', 'CreateCtrl']);

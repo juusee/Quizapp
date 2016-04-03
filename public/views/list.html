@@ -1,0 +1,19 @@
+<div ng-repeat="question in questions">
+
+    <div class="col-md-6 col-md-offset-3">
+        <div class="question">
+            <h3>{{ question.content }}</h3>
+            <div class="options">
+                <ul>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op1 }}</button></a></li>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op2 }}</button></a></li>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op3 }}</button></a></li>
+                </ul>
+            </div>
+        </div>
+        <form ng-submit="deleteQuestion(question.id)">
+            <input type="hidden" name="_method" value="delete" />
+            <button class="btn btn-danger">Remove</button>
+        </form>
+    </div>
+</div>

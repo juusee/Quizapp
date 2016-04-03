@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col-md-1 col-md-offset-2">
+        <button ng-if="offset > 0" ng-click="newQuestion(-1)" class="btn btn-info btn-lg">Prev</button>
+    </div>
+    <div class="col-md-6">
+
+        <div class="question">
+            <h3>{{ question.content }}</h3>
+            <div class="options">
+                <ul>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op1 }}</button></a></li>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op2 }}</button></a></li>
+                    <li><a href=""><button ng-if="question" class="btn btn-success btn-lg">{{ question.answer_op3 }}</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-1">
+        <button ng-if="hasNext" ng-click="newQuestion(1)" class="btn btn-info btn-lg">Next</button>
+    </div>
+</div>

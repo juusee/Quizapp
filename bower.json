@@ -1,0 +1,24 @@
+{
+  "name": "Quiz",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Jussi Rinta-Jaskari <jussi.rintajaskari@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "node"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.3",
+    "angular-route": "^1.5.3"
+  }
+}
